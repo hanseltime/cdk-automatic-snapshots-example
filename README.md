@@ -41,7 +41,7 @@ Here is how we setup our jest tests:
 
 ```mermaid
 flowchart TD
-    A[Jest Start] --> B(Global setup:\nmain#40;#41;->tmp directory)
+    A[Jest Start] --> B(Global setup:\ncall main->tmp directory)
     B --> C(Existing Tests)
     B --> D(Generate Tests Test)
     D --> E(Create any new snapshot test files)
