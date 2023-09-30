@@ -1,0 +1,7 @@
+import { getSynthedStack } from '{{ pathToTestUtils }}'
+import { dump } from 'js-yaml'
+
+it('{{ stackName }} snapshots', () => {
+  const stack = getSynthedStack('{{ stackName }}')
+  expect(dump(stack.template)).toMatchSnapshot()
+})
